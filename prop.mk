@@ -91,12 +91,10 @@ persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
 persist.vendor.qti.telephony.vt_cam_interface=1 \
 vidc.enc.dcvs.extra-buff-count=2 \
-persist.camera.HAL3.enabled=1 \
 vendor.camera.lowpower.record.enable=1 \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,org.lineageos.snap \
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime \
-vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk,com.whatsapp,com.intsig.camscanner \
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.mi.AutoTest
+vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk,com.whatsapp,com.android.camera2 \
 
 # Cne
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -297,6 +295,10 @@ ro.surface_flinger.protected_contents=true \
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
 ro.surface_flinger.use_color_management=true
+
+# Thermal configs path
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.thermal.data.path=/data/vendor/thermal/
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
