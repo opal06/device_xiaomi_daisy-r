@@ -142,7 +142,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libvolumelistener \
     tinymix
-    
+
 # A2DP
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
