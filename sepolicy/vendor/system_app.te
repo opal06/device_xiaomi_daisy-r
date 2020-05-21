@@ -19,3 +19,7 @@ allow system_app sysfs_thermal:file { write };
 allow system_app sysfs_kgsl:lnk_file read;
 allow system_app fm_prop:property_service set;
 allow system_app vendor_file:file { execute getattr open read };
+
+#DeviceSettings.apk need to get and set camera_prop
+get_prop(system_app, camera_prop)
+set_prop(system_app, camera_prop)
