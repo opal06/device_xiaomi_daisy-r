@@ -85,6 +85,11 @@ PRODUCT_COPY_FILES += \
 # Device Properties
 -include $(LOCAL_PATH)/prop.mk
 
+#Add missing android.frameworks.sensorservice
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v27/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0-v27.so \
+    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice@1.0-v27.so
+
 # ANT
 PRODUCT_PACKAGES += \
     AntHalService \
