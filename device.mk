@@ -98,7 +98,10 @@ PRODUCT_PACKAGES += \
 
 # A/B
 AB_OTA_UPDATER := true
-
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_verifier
+    
 AB_OTA_PARTITIONS += \
     boot \
     system \
