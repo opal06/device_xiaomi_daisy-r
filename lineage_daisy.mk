@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit some common potato stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOTANIM_LOW_RES := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
