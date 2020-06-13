@@ -389,6 +389,10 @@ vendor.audio.dolby.ds2.enabled=false \
 vendor.audio.dolby.ds2.hardbypass=false \
 vendor.audio.offload.passthrough=false
 
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q660-13149-1
+
 #Dolby Plus
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.keep_app_1=com.dolby.ds1appUI
