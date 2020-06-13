@@ -89,6 +89,7 @@ persist.camera.dual.camera=0 \
 persist.camera.gyro.disable=0 \
 persist.camera.HAL3.enabled=1 \
 persist.vendor.camera.HAL3.enabled=1 \
+persist.vendor.camera.max.previewfps=60 \
 persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
 persist.vendor.qti.telephony.vt_cam_interface=1 \
