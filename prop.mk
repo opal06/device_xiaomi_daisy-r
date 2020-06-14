@@ -89,6 +89,7 @@ vendor.camera.lowpower.record.enable=1 \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.mi.AutoTest \
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime \
 persist.camera.HAL3.enabled=1 \
+persist.camera.hal_migrating=0 \
 persist.vendor.camera.HAL3.enabled=1 \
 persist.camera.daisy.restart=0
 
