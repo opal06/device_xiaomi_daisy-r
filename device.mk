@@ -161,7 +161,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-service \
     vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.bluetooth_dun@1.0 \
-    libldacBT_dec
+    
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -183,6 +183,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
 
+#Bluetooth
+PRODUCT_PACKAGES += \
+    libldacBT_dec
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.common@2.0 \
@@ -194,7 +198,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.postproc@1.0 \
-    snap
+    Snap
 
 # Consumerir
 PRODUCT_PACKAGES += \
