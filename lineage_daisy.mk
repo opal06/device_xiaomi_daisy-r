@@ -52,7 +52,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Lineage Updater
 PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/a-huk/otaserver/master/01-02.json
+    lineage.updater.uri=https://raw.githubusercontent.com/a-huk/otaserver/master/02-03.json
 
 # FINGERPRINT
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
