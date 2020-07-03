@@ -15,6 +15,8 @@
 #
 
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
+$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Soong namespaces
@@ -375,7 +377,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.daisy-libperfmgr \
+    android.hardware.power@1.2-service-qti \
     android.hardware.power.stats@1.0-service.daisy
 
 PRODUCT_COPY_FILES += \
