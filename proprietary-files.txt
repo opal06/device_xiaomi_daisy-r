@@ -1,3 +1,5 @@
+#This file is not up to date and probably never will, I am currently using https://github.com/mahajant99/vendor_xiaomi_daisy.git
+
 # ADSP - from sakura
 vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
