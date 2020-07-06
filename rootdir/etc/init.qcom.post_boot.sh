@@ -228,7 +228,7 @@ function configure_zram_parameters() {
     # Set Zram disk size to 512MB for 3GB and below targets, 1GB for above 3GB targets.
     if [ -f /sys/block/zram0/disksize ]; then
         if [ $MemTotal -gt 3145728 ]; then
-            echo 2147483648 > /sys/block/zram0/disksize
+            echo 1073741824 > /sys/block/zram0/disksize
         else
             echo 2147483648 > /sys/block/zram0/disksize
         fi
@@ -313,10 +313,11 @@ function configure_memory_parameters() {
     #
 
 ProductName=`getprop ro.product.name`
+
 low_ram=`getprop ro.config.low_ram`
 
-if [ "$ProductName" == "msmnile" ]; then
-      # Enable ZRAM
+if [ "$ProductName" == "sakura" ] || [ "$ProductName" == "daisy" ] ; then
+# Enable ZRAM
       configure_zram_parameters
       configure_read_ahead_kb_values
       echo 0 > /proc/sys/vm/page-cluster
