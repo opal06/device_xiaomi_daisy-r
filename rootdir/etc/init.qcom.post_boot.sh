@@ -316,7 +316,7 @@ ProductName=`getprop ro.product.name`
 
 low_ram=`getprop ro.config.low_ram`
 
-if [ "$ProductName" == "sakura" ] || [ "$ProductName" == "daisy" ] ; then
+if [ "$ProductName" == "*sakura*" ] || [ "$ProductName" == "*daisy*" ] ; then
 # Enable ZRAM
       configure_zram_parameters
       configure_read_ahead_kb_values

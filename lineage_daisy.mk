@@ -55,9 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     lineage.updater.uri=https://raw.githubusercontent.com/a-huk/otaserver/master/05-06.json
 
 # FINGERPRINT
-BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"\
-    PRODUCT_NAME="daisy" \
-    TARGET_DEVICE="daisy"
+BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
