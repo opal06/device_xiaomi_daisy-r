@@ -418,7 +418,9 @@ PRODUCT_PACKAGES += \
     init.daisy.rc \
     move_time_data.sh \
     move_wifi_data.sh \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.camera.rc \
+    init.camera.sh
 
 # init.d support
 PRODUCT_PACKAGES += \
