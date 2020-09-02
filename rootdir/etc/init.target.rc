@@ -44,18 +44,6 @@ on fs
     chmod 0664 /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/class/thermal/thermal_message/sconfig
 
-#Restart by DeviceSettings.apk
-on property:persist.camera.daisy.restart=1
-    restart qcamerasvr
-    setprop persist.camera.daisy.restart 0
-
-#Switch Camera HAL Level by DeviceSettings.apk
-on property:persist.camera.HAL3.enabled=*
-    restart qcamerasvr
-on property:persist.camera.hal_migrating=1
-    restart vendor.camera-provider-2-4
-    setprop persist.camera.hal_migrating 0
-
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
