@@ -16,14 +16,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="leeco_settings_title">LeEco Settings</string>
+    <string name="leeco_settings_title">Daisy Settings</string>
     <string name="leeco_settings_summary">Device specific settings</string>
 
-    <string name="camera_reset_title">Camera Reset</string>
-    <string name="camera_reset_summary">This resets the camera server if your camera blackscreens</string>
+    <string name="camera_reset_title">Camera Switcher</string>
+    <string name="camera_reset_summary">This changes from HAL1 to HAL3 and back</string>
     <string name="camera_reset_hint">restarting camera server...</string>
-    <string name="camera_reset_launcher_name">CamReset</string>
+    <string name="camera_reset_launcher_name">CamSwitch</string>
     <string name="camera_hal3_enable">Camera HAL3</string>
-    <string name="camera_hal3_summary">Disabling HAL3 will force the usage of HAL1 instead if you are annoyed by camera blackscreens. Please note that Gcam mods require HAL3.</string>
+    <string name="camera_hal3_summary">Disabling HAL3 will force the usage of HAL1 instead if you are annoyed by camera issues. Please note that Gcam mods require HAL3.</string>
 
 </resources>

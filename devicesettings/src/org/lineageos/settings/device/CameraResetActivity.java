@@ -18,11 +18,19 @@ package org.lineageos.settings.device;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.SystemProperties;
+import android.util.Log;
+
 
 public class CameraResetActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (SettingsUtils.cameraHAL3Enable()) {
+            SettingsUtils.writeCameraHAL3Prop(false);
+        }else{
+            SettingsUtils.writeCameraHAL3Prop(true);
+        }
         SettingsUtils.writeCameraRestartProp(this);
         finish();
     }
