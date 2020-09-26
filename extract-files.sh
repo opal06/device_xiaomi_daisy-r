@@ -75,6 +75,19 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 extract "${MY_DIR}"/proprietary-files.txt "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+function blob_fixup() {
+    case "${1}" in
+        lib64/libwfdnative.so)
+        patchelf --add-needed "libshim_wfdservice.so" "${2}"
+        ;;
+        lib/libwfdcommonutils.so)
+        patchelf --add-needed "libshim_wfdservice.so" "${2}"
+        ;;
+        lib/libwfdmmsrc.so)
+        patchelf --add-needed "libshim_wfdservice.so" "${2}"
+        ;;
+    esac
+
 DEVICE_BLOB_ROOT="${LINEAGE_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
 
 "${MY_DIR}/setup-makefiles.sh"
