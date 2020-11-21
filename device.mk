@@ -405,6 +405,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/daisy
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_wfdservice
+
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
