@@ -204,6 +204,10 @@ ro.vendor.extension_library=libqti-perfd-client.so
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.potato.has_cutout=true
 
+# Perfetto
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.traced.enable=0
+
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.use_data_netmgrd=true \
