@@ -105,6 +105,9 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # CNE / DPM
 BOARD_USES_QCNE := true
 
+# Dexpreopt everything to shorten boottimes
+WITH_DEXPREOPT := true
+
 # Display
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
