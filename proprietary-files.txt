@@ -97,8 +97,8 @@ vendor/lib64/hw/audio.primary.msm8953.so|93a15cfc441bc13df66a5557add4d2ba803b2b9
 lib/soundfx/libasphere.so
 lib64/soundfx/libasphere.so
 
-# ANT+ (vendor)
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
+# ANT+ (vendor) - from LA.UM.9.6.2.r1-02100-89xx.0
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|1860cfe896871694dae434daebf04927fde6347e
 
 # AptX - from sunfish-user 11 RP1A.200720.011 6746289 release-keys
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
