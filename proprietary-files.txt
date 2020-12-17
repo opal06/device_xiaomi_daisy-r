@@ -1989,8 +1989,8 @@ vendor/lib64/libcdsp_default_listener.so|94792d75a16534ae766aba9c0d4a4a62782eac6
 vendor/lib64/libfastrpc_utf_stub.so|d19ff5b0ef7506a5d28f5825547dcf235c2f8f96
 vendor/lib64/libsysmon_cdsp_skel.so|f3cb20891b795036134a659cd530287fe8c84369
 
-# Charger
-vendor/bin/hvdcp_opti
+# Charger - from LA.UM.9.6.2.r1-02100-89xx.0
+vendor/bin/hvdcp_opti|9c8897319cb9acd1befb3f8b674641361f3cf215
 
 # CNE - from LA.UM.8.6.2.r1-08400-89xx.0
 etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
