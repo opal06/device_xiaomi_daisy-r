@@ -412,10 +412,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_wfdservice
-
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk

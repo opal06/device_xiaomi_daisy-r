@@ -69,22 +69,6 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-function blob_fixup() {
-    case "${1}" in
-    lib64/libwfdnative.so)
-        patchelf --add-needed "libshim_wfdservice.so" "${2}"
-        ;;
-    
-    lib/libwfdcommonutils.so)
-        patchelf --add-needed "libshim_wfdservice.so" "${2}"
-        ;;
-    
-    lib/libwfdmmsrc.so)
-        patchelf --add-needed "libshim_wfdservice.so" "${2}"
-        ;;
-    esac
-}
-
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
