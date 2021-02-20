@@ -86,6 +86,9 @@ function blob_fixup() {
         lib/libwfdmmsrc.so)
         patchelf --add-needed "libshim_wfdservice.so" "${2}"
         ;;
+        lib/libwfdmmsink.so)
+        patchelf --add-needed "libshim_wfdservice.so" "${2}"
+        ;;
     esac
 
 DEVICE_BLOB_ROOT="${LINEAGE_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
