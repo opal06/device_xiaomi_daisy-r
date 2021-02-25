@@ -47,12 +47,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ1A.210105.002/6985033:user/release-keys"
 
-# Lineage Updater
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/a-huk/otaserver/master/1801-02.json
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
