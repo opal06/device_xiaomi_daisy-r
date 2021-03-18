@@ -500,7 +500,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
-#Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
